@@ -459,6 +459,172 @@
         line-height: 1.6;
       }
 
+      .video-section {
+        background: #eef5fc;
+      }
+
+      .video-frame {
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #061321;
+        box-shadow: var(--shadow);
+      }
+
+      .video-frame iframe {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border: 0;
+      }
+
+      .mac-admin {
+        background: #fff;
+      }
+
+      .mac-admin-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+        gap: 34px;
+        align-items: center;
+      }
+
+      .mac-admin-copy h2 {
+        margin: 18px 0 16px;
+        font-size: clamp(2.1rem, 4vw, 4rem);
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .mac-admin-copy p {
+        max-width: 620px;
+        color: var(--muted);
+        font-size: 1.14rem;
+        line-height: 1.7;
+      }
+
+      .mac-admin-actions {
+        margin-top: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .mac-admin-note {
+        max-width: 310px;
+        color: #405067;
+        font-weight: 800;
+        line-height: 1.45;
+      }
+
+      .mac-window {
+        overflow: hidden;
+        border: 1px solid #cfddec;
+        border-radius: 8px;
+        background: #f8fbff;
+        box-shadow: var(--shadow);
+      }
+
+      .mac-window-bar {
+        height: 42px;
+        border-bottom: 1px solid var(--line);
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: #eef5fc;
+      }
+
+      .mac-window-bar span {
+        flex: 0 0 auto;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #ff5f57;
+      }
+
+      .mac-window-bar span:nth-child(2) {
+        background: #ffbd2e;
+      }
+
+      .mac-window-bar span:nth-child(3) {
+        background: #28c840;
+      }
+
+      .mac-window-bar strong {
+        margin-left: 10px;
+        color: #405067;
+        font-size: 0.9rem;
+      }
+
+      .mac-window-body {
+        padding: 22px;
+        display: grid;
+        gap: 18px;
+        background: linear-gradient(180deg, #f8fbff, #eef5fc);
+      }
+
+      .mac-main-shot {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        object-position: top left;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 18px 44px rgba(8, 22, 40, 0.12);
+      }
+
+      .mac-screen-strip {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .mac-screen-strip button {
+        overflow: hidden;
+        margin: 0;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0;
+        color: inherit;
+        background: #fff;
+        cursor: pointer;
+        font: inherit;
+        text-align: left;
+        transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+      }
+
+      .mac-screen-strip button:hover,
+      .mac-screen-strip button:focus-visible,
+      .mac-screen-strip button.is-active {
+        border-color: var(--blue);
+        box-shadow: 0 12px 28px rgba(25, 118, 217, 0.18);
+      }
+
+      .mac-screen-strip button:hover,
+      .mac-screen-strip button:focus-visible {
+        transform: translateY(-2px);
+      }
+
+      .mac-screen-strip img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        object-position: top left;
+      }
+
+      .mac-screen-strip span {
+        min-height: 42px;
+        display: flex;
+        align-items: center;
+        padding: 10px 12px;
+        color: #405067;
+        font-weight: 850;
+      }
+
       .gallery-grid {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -615,6 +781,7 @@
 
         .hero,
         .showcase-grid,
+        .mac-admin-grid,
         .developer-grid,
         .cta-panel {
           grid-template-columns: 1fr;
@@ -637,6 +804,10 @@
 
         .screen-carousel {
           position: static;
+        }
+
+        .mac-admin-copy p {
+          max-width: none;
         }
       }
 
@@ -714,6 +885,18 @@
 
         .gallery-item img {
           height: 520px;
+        }
+
+        .mac-window-body {
+          padding: 14px;
+        }
+
+        .mac-screen-strip {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .mac-screen-strip img {
+          height: 82px;
         }
 
         .person {
