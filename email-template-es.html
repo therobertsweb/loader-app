@@ -22,6 +22,32 @@
           max-width: 100% !important;
           height: auto !important;
         }
+        .mobile-stack {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          box-sizing: border-box !important;
+        }
+        .mobile-stack-pad {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .mobile-button {
+          display: inline-block !important;
+          width: auto !important;
+          max-width: 100% !important;
+          box-sizing: border-box !important;
+          white-space: nowrap !important;
+        }
+        .app-store-badge {
+          width: 162px !important;
+          max-width: 100% !important;
+          height: auto !important;
+        }
+        table.mobile-cta-table {
+          width: auto !important;
+          max-width: 100% !important;
+        }
         .mobile-padding {
           padding-left: 8px !important;
           padding-right: 8px !important;
@@ -96,10 +122,10 @@
               <td style="padding:0 28px 30px;">
                 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tr>
-                    <td width="50%" style="padding:0 8px 12px 0; vertical-align:top;">
+                    <td class="mobile-stack mobile-stack-pad" width="50%" style="padding:0 8px 12px 0; vertical-align:top;">
                       <img src="assets/edit-order.png" width="304" alt="Pantalla de creacion de ordenes en Loader-App" style="display:block; width:100%; max-width:304px; border:0; border-radius:12px;">
                     </td>
-                    <td width="50%" style="padding:0 0 12px 8px; vertical-align:top;">
+                    <td class="mobile-stack mobile-stack-pad" width="50%" style="padding:0 0 12px 8px; vertical-align:top;">
                       <img src="assets/orders-map.png" width="304" alt="Mapa de Loader-App con ubicaciones de entrega" style="display:block; width:100%; max-width:304px; border:0; border-radius:12px;">
                     </td>
                   </tr>
@@ -117,21 +143,21 @@
                 <h2 style="margin:0 0 16px; color:#07111f; font-size:26px; line-height:32px; font-weight:900;">Creada para mantener cada despacho organizado.</h2>
                 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tr>
-                    <td width="50%" style="padding:0 10px 16px 0; vertical-align:top;">
+                    <td class="mobile-stack mobile-stack-pad" width="50%" style="padding:0 10px 16px 0; vertical-align:top;">
                       <p style="margin:0 0 6px; color:#07111f; font-size:16px; line-height:22px; font-weight:850;">Gestion de ordenes</p>
                       <p style="margin:0; color:#647083; font-size:14px; line-height:22px;">Crea y da seguimiento a entregas con datos del cliente, direcciones, fechas, estado y archivos adjuntos.</p>
                     </td>
-                    <td width="50%" style="padding:0 0 16px 10px; vertical-align:top;">
+                    <td class="mobile-stack mobile-stack-pad" width="50%" style="padding:0 0 16px 10px; vertical-align:top;">
                       <p style="margin:0 0 6px; color:#07111f; font-size:16px; line-height:22px; font-weight:850;">Visibilidad de flota</p>
                       <p style="margin:0; color:#647083; font-size:14px; line-height:22px;">Monitorea disponibilidad de camiones, rutas, ubicaciones y estado operativo desde un solo espacio.</p>
                     </td>
                   </tr>
                   <tr>
-                    <td width="50%" style="padding:0 10px 16px 0; vertical-align:top;">
+                    <td class="mobile-stack mobile-stack-pad" width="50%" style="padding:0 10px 16px 0; vertical-align:top;">
                       <p style="margin:0 0 6px; color:#07111f; font-size:16px; line-height:22px; font-weight:850;">Acceso en la nube</p>
                       <p style="margin:0; color:#647083; font-size:14px; line-height:22px;">Mantiene los registros logisticos disponibles desde cualquier lugar con informacion actualizada.</p>
                     </td>
-                    <td width="50%" style="padding:0 0 16px 10px; vertical-align:top;">
+                    <td class="mobile-stack mobile-stack-pad" width="50%" style="padding:0 0 16px 10px; vertical-align:top;">
                       <p style="margin:0 0 6px; color:#07111f; font-size:16px; line-height:22px; font-weight:850;">Reportes y analiticas</p>
                       <p style="margin:0; color:#647083; font-size:14px; line-height:22px;">Revisa carga de trabajo, tiempos de entrega, estados y datos de rendimiento para tomar mejores decisiones.</p>
                     </td>
@@ -181,7 +207,7 @@
                       <p style="margin:0 0 18px; color:#cfe2f7; font-size:15px; line-height:24px;">
                         Solicita acceso ahora y nuestro equipo puede ayudarte a entender la configuracion, los requisitos administrativos y la mejor forma de llevar Loader-App a tu operacion logistica.
                       </p>
-                      <a href="https://neo.bss.design/contact.html" target="_blank" style="display:inline-block; padding:14px 20px; background:#1976d9; border-radius:8px; color:#ffffff; font-size:15px; line-height:18px; font-weight:850; text-decoration:none;">Solicitar acceso</a>
+                      <a class="mobile-button" href="https://neo.bss.design/contact.html" target="_blank" style="display:inline-block; padding:14px 20px; background:#1976d9; border-radius:8px; color:#ffffff; font-size:15px; line-height:18px; font-weight:850; text-decoration:none; white-space:nowrap;">Solicitar acceso</a>
                     </td>
                   </tr>
                 </table>
@@ -194,15 +220,15 @@
                 <p style="margin:0 auto 22px; max-width:560px; color:#536174; font-size:16px; line-height:25px;">
                   Lleva ordenes, choferes, rutas, contactos, documentos y analiticas a una plataforma creada para mover la logistica con mas control.
                 </p>
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                <table class="mobile-cta-table" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="width:auto;">
                   <tr>
-                    <td align="center" style="padding:0 6px 10px;">
+                    <td class="mobile-stack" align="center" style="padding:0 6px 10px;">
                       <a href="#" target="_blank" style="text-decoration:none;">
-                        <img src="assets/app-store-preorder.jpeg" width="162" alt="Pre-order on the App Store" style="display:block; border:0; border-radius:8px;">
+                        <img class="app-store-badge" src="assets/app-store-preorder.jpeg" width="162" alt="Pre-order on the App Store" style="display:block; width:162px; max-width:100%; height:auto; border:0; border-radius:8px;">
                       </a>
                     </td>
-                    <td align="center" style="padding:0 6px 10px;">
-                      <a href="https://neo.bss.design/contact.html" target="_blank" style="display:inline-block; padding:15px 20px; background:#1976d9; border-radius:8px; color:#ffffff; font-size:15px; line-height:18px; font-weight:850; text-decoration:none;">Habla con el equipo</a>
+                    <td class="mobile-stack" align="center" style="padding:0 6px 10px;">
+                      <a class="mobile-button" href="https://neo.bss.design/contact.html" target="_blank" style="display:inline-block; padding:15px 20px; background:#1976d9; border-radius:8px; color:#ffffff; font-size:15px; line-height:18px; font-weight:850; text-decoration:none; white-space:nowrap;">Habla con el equipo</a>
                     </td>
                   </tr>
                 </table>
